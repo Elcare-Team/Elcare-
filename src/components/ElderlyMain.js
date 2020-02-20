@@ -6,22 +6,29 @@ import {
   Modal,
   Input,
   Form,
-  Message
+  Message,
+  Select
 } from "semantic-ui-react";
 import { connect } from "react-redux";
 import { checkIn } from "../actions";
 import { formatDistance } from "date-fns";
 import { Link } from "react-router-dom";
 import "../styles/ElderlyMain.css";
-
+const relationships = [
+  { key: "c", text: "Family", value: "family" },
+  { key: "f", text: "Friend", value: "friend" },
+  { key: "o", text: "Other", value: "other" }
+];
 class ElderlyMain extends Component {
   state = {
     open: false,
     one: "",
     oneset: false,
-    two: "",
-    three: "",
-    four: ""
+    firstName: "",
+    lastName: "",
+    relationship: " ",
+    email: "",
+    phoneNumber: ""
   };
 
   close = () => {
@@ -33,6 +40,9 @@ class ElderlyMain extends Component {
   };
 
   handleSubmit = (index, event) => {
+    if (isNaN(this.state.phoneNumber)) {
+      console.log("error");
+    }
     event.preventDefault();
     this.setState({ [index]: "", [`${index}set`]: true });
     setTimeout(() => {
@@ -47,12 +57,8 @@ class ElderlyMain extends Component {
   renderModal = () => {
     return (
       <div>
-        <Modal
-          style={{ position: "absolute" }}
-          open={this.state.open}
-          onClose={this.close}
-        >
-          <Modal.Header>Settings</Modal.Header>
+        <Modal className="modal" open={this.state.open} onClose={this.close}>
+          <Modal.Header className="settings">Settings</Modal.Header>
           <Modal.Content>{this.renderModalInfo()}</Modal.Content>
           <Modal.Actions>
             <Button
@@ -82,25 +88,63 @@ class ElderlyMain extends Component {
     return (
       <Modal.Description>
         {this.state["oneset"] ? (
-          <Message
-            success
-            header="Sucessfully Changed Emergency Contact Number"
-          />
+          <Message success header="Sucessfully Added An Emergency Contact " />
         ) : (
-          <p></p>
-        )}
-        Change Emergency Contact Number{" "}
+          <p className="add-contact">Add Emergency Contact</p>
+        )}{" "}
         <Form onSubmit={this.handleSubmit.bind(this, "one")}>
-          <Input
-            value={this.state["one"]}
-            onChange={this.handleChange.bind(this, "one")}
-            action={{
-              color: "green",
-              labelPosition: "right",
-              icon: "copy",
-              content: "Save"
-            }}
+          <Form.Group widths="equal">
+            <Form.Field
+              control={Input}
+              required
+              label="First name"
+              placeholder="First name"
+            />
+            <Form.Field
+              control={Input}
+              label="Last name"
+              required
+              placeholder="Last name"
+            />
+            <Form.Field
+              control={Select}
+              options={relationships}
+              required
+              label={{
+                children: "Relationship",
+                htmlFor: "form-select-control-gender"
+              }}
+              placeholder="Relationship"
+              search
+              searchInput={{ id: "form-select-control-gender" }}
+            />
+          </Form.Group>
+          <label for="email">Email</label>
+          <input
+            control={Input}
+            type="email"
+            id="emails"
+            label="Email"
+            required
+            placeholder="oldperson@gmail.com"
+          ></input>
+          <label for="phone">Phone Number (ex. 1234567890)</label>
+          <input
+            type="number"
+            required
+            label="Phone Number"
+            placeholder="XXXXXXXXXX"
+            type="tel"
+            id="phone"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
           />
+          <Button
+            value={this.state["one"]}
+            onClick={this.handleChange.bind(this, "one")}
+            className="modal-button"
+          >
+            Save
+          </Button>
         </Form>
       </Modal.Description>
     );
