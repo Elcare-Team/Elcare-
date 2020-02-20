@@ -31,7 +31,7 @@ class CaregiverMain extends Component {
 
   render() {
     return (
-      <div>
+      <div className="caregiver">
         <Card.Group>
           {this.renderCard("one")}
           {this.renderCard("two")}

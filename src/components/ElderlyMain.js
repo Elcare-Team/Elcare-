@@ -115,7 +115,7 @@ class ElderlyMain extends Component {
     const { elderly } = this.props;
     if (!elderly["one"].checkedIn) {
       return (
-        <div>
+        <div className="checkin">
           <h1>Would you like to check in?</h1>
           <Button
             onClick={() => this.onCheckIn("one")}
@@ -130,7 +130,7 @@ class ElderlyMain extends Component {
     }
 
     return (
-      <div>
+      <div className="checkin">
         <h2>You have checked in!</h2>
         <p>
           Last check in:{" "}

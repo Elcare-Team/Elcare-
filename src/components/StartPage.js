@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Container, Button } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import "../styles/StartPage.css";
 
 class StartPage extends Component {
   nextPage = type => {};
 
   render() {
     return (
-      <div style={{ textAlign: "center" }}>
+      <div className="start" style={{ textAlign: "center" }}>
         <h1>Elcare</h1>
         <Link to="/caregiver">
           <Button size="massive" basic>
