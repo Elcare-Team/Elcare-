@@ -12,6 +12,7 @@ import { connect } from "react-redux";
 import { checkIn } from "../actions";
 import { formatDistance } from "date-fns";
 import { Link } from "react-router-dom";
+import "../styles/ElderlyMain.css";
 
 class ElderlyMain extends Component {
   state = {
@@ -177,7 +178,4 @@ const mapStateToProps = state => {
   return { elderly: state.elderly };
 };
 
-export default connect(
-  mapStateToProps,
-  { checkIn }
-)(ElderlyMain);
+export default connect(mapStateToProps, { checkIn })(ElderlyMain);

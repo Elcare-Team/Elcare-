@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Card, Image, Icon } from "semantic-ui-react";
 import steve from "../images/steve.jpg";
 import { connect } from "react-redux";
+import "../styles/CaregiverMain.css";
 
 class CaregiverMain extends Component {
   renderCard = index => {
