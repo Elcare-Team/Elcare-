@@ -1,6 +1,7 @@
-// import React, { Component } from "react";
 // import { Container, Button } from "semantic-ui-react";
-// import { Link } from "react-router-dom";
+import React from 'react'
+import { Button, Form, Grid, Segment } from 'semantic-ui-react'
+import { Link } from "react-router-dom";
 import "../styles/StartPage.css";
 //
 // class StartPage extends Component {
@@ -26,9 +27,26 @@ import "../styles/StartPage.css";
 // }
 //
 // export default StartPage;
+let email = "email";
+let password = "password"
 
-import React from 'react'
-import { Button, Form, Grid, Segment } from 'semantic-ui-react'
+function getpath() {
+  if (email === "paul@elcare.com" && password === "caregiver"){
+     return "/caregiver"
+  }
+  if (email === "stevesmith@elcare.com" && password === "elderly"){
+     return "/elderly"
+  }
+}
+
+function emailchange(e) {
+  email = e.target.value;
+}
+
+function passwordchange(e) {
+  password = e.target.value;
+}
+
 
 const LoginForm = () => (
   <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
@@ -36,23 +54,25 @@ const LoginForm = () => (
       <Form size='large'>
         <Segment className="border" stacked>
           <h1>Elcare</h1>
-          <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
-          <Form.Input
-            fluid
-            icon='lock'
-            iconPosition='left'
-            placeholder='Password'
-            type='password'
-          />
-
-          <Button fluid size='large'>
-            Login
-          </Button>
+          <Form.Input className="email" fluid icon='user' iconPosition='left' placeholder='E-mail address' onChange={emailchange}/>
+          <Form.Input fluid icon='lock'iconPosition='left' placeholder='Password' type='password' onChange={passwordchange}/>
+            <Link to={getpath}>
+              <Button className="login" fluid size='large'>
+                Login
+              </Button>
+            </Link>
         </Segment>
       </Form>
     </Grid.Column>
   </Grid>
 )
+
+// Button.addEventListener("click", nextPage);
+// // console.log('.email')
+//
+// const nextPage = () => {
+//   console.log('.email')
+// }
 
 export default LoginForm
 // <Header as='h2' color='teal' textAlign='center'>
