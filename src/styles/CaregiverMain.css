@@ -1,3 +1,39 @@
-.caregiver{
+.caregiver {
   margin: 12%;
+}
+.elderly-person {
+  margin: 10px !important;
+}
+.img-old {
+}
+.steve-info {
+  font-size: 20px !important;
+  padding-top: 15px;
+}
+.paul {
+  color: red !important;
+  font-size: 40px !important;
+}
+.small-message {
+  font-size: 20px;
+}
+.me {
+  width: 1500px !important;
+  display: flex;
+}
+.graph-title {
+  font-size: 28px !important;
+}
+
+.message-popup {
+  background-color: white !important;
+  border: 1px white !important;
+}
+.steve {
+  display: flex;
+  flex-direction: row;
+}
+.graph {
+  margin: 10px !important;
+  width: 800px !important;
 }
