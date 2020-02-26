@@ -54,7 +54,7 @@ const LoginForm = () => (
       <Form size='large'>
         <Segment className="border" stacked>
           <h1>Elcare</h1>
-          <Form.Input className="email" fluid icon='user' iconPosition='left' placeholder='E-mail address' onChange={emailchange}/>
+          <Form.Input className="email" fluid icon='user' iconPosition='left' placeholder='E-mail address' onChange={emailchange} required/>
           <Form.Input fluid icon='lock'iconPosition='left' placeholder='Password' type='password' onChange={passwordchange}/>
             <Link to={getpath}>
               <Button className="login" fluid size='large'>
