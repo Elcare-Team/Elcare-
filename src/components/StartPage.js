@@ -1,6 +1,6 @@
 // import { Container, Button } from "semantic-ui-react";
-import React from 'react'
-import { Button, Form, Grid, Segment } from 'semantic-ui-react'
+import React from "react";
+import { Button, Form, Grid, Segment } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import "../styles/StartPage.css";
 //
@@ -28,14 +28,14 @@ import "../styles/StartPage.css";
 //
 // export default StartPage;
 let email = "email";
-let password = "password"
+let password = "password";
 
 function getpath() {
-  if (email === "paul@elcare.com" && password === "caregiver"){
-     return "/caregiver"
+  if (email === "paul@elcare.com" && password === "caregiver") {
+    return "/caregiver";
   }
-  if (email === "stevesmith@elcare.com" && password === "elderly"){
-     return "/elderly"
+  if (email === "stevesmith@elcare.com" && password === "elderly") {
+    return "/elderly";
   }
 }
 
@@ -47,25 +47,39 @@ function passwordchange(e) {
   password = e.target.value;
 }
 
-
 const LoginForm = () => (
-  <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
+  <Grid textAlign="center" style={{ height: "100vh" }} verticalAlign="middle">
     <Grid.Column style={{ maxWidth: 450 }}>
-      <Form size='large'>
+      <Form size="large">
         <Segment className="border" stacked>
           <h1>Elcare</h1>
-          <Form.Input className="email" fluid icon='user' iconPosition='left' placeholder='E-mail address' onChange={emailchange} required/>
-          <Form.Input fluid icon='lock'iconPosition='left' placeholder='Password' type='password' onChange={passwordchange}/>
-            <Link to={getpath}>
-              <Button className="login" fluid size='large'>
-                Login
-              </Button>
-            </Link>
+          <Form.Input
+            className="email"
+            fluid
+            icon="user"
+            iconPosition="left"
+            placeholder="E-mail address"
+            onChange={emailchange}
+            required
+          />
+          <Form.Input
+            fluid
+            icon="lock"
+            iconPosition="left"
+            placeholder="Password"
+            type="password"
+            onChange={passwordchange}
+          />
+          <Link to={getpath}>
+            <Button className="login" fluid size="large" textAlign="right">
+              Login
+            </Button>
+          </Link>
         </Segment>
       </Form>
     </Grid.Column>
   </Grid>
-)
+);
 
 // Button.addEventListener("click", nextPage);
 // // console.log('.email')
@@ -74,7 +88,7 @@ const LoginForm = () => (
 //   console.log('.email')
 // }
 
-export default LoginForm
+export default LoginForm;
 // <Header as='h2' color='teal' textAlign='center'>
 //    Elcare
 // </Header>

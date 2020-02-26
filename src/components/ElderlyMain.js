@@ -136,7 +136,6 @@ class ElderlyMain extends Component {
             placeholder="XXXXXXXXXX"
             type="tel"
             id="phone"
-            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
           />
           <Button
             value={this.state["one"]}
@@ -189,9 +188,14 @@ class ElderlyMain extends Component {
       <div>
         {this.renderModal()}
         <Link to="/">
-          <Button size="huge" style={{ float: "left" }} icon labelPosition="left" >
+          <Button
+            size="huge"
+            style={{ float: "left" }}
+            icon
+            labelPosition="left"
+          >
             Log Out
-            <Icon name="angle down" />
+            <Icon name="angle left" />
           </Button>
         </Link>
         <Button
