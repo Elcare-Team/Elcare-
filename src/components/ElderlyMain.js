@@ -189,14 +189,9 @@ class ElderlyMain extends Component {
       <div>
         {this.renderModal()}
         <Link to="/">
-          <Button
-            size="huge"
-            style={{ float: "left" }}
-            icon
-            labelPosition="left"
-          >
-            Go Back
-            <Icon name="left arrow" />
+          <Button size="huge" style={{ float: "left" }} icon labelPosition="left" >
+            Log Out
+            <Icon name="angle down" />
           </Button>
         </Link>
         <Button
