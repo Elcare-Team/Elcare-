@@ -4,7 +4,7 @@ class ElderlyOne extends Component {
   render() {
     return (
       <div>
-        <p>Elderly One</p>
+        <p>Elderly One!</p>
       </div>
     );
   }
