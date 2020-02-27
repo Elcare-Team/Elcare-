@@ -14,7 +14,7 @@ h1 {
   /* padding-bottom: 50px; */
 }
 
-button {
+.login {
   color: white !important;
   background: red !important;
   width: 30% !important;
