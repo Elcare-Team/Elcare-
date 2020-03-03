@@ -137,7 +137,6 @@ class ElderlyMain extends Component {
             placeholder="XXXXXXXXXX"
             type="tel"
             id="phone"
-            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
           />
           <Button
             value={this.state["one"]}
@@ -199,8 +198,8 @@ class ElderlyMain extends Component {
             icon
             labelPosition="left"
           >
-            Go Back
-            <Icon name="left arrow" />
+            Log Out
+            <Icon name="angle left" />
           </Button>
         </Link>
         <Button

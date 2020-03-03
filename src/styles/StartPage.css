@@ -2,20 +2,30 @@
   margin: 100px auto;
   padding-top: 80px;
   padding-bottom: 80px;
-  /* border: 20px solid blue; */
+
   width: 50%;
   display: inline-block;
   border: 4px solid lightskyblue;
   margin-left: 25%;
-  border-radius: 30px;
 }
 
-h1{
+h1 {
   color: red;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
-/* Button{
-  padding: 30px;
-  color: white;
+button {
+  color: white !important;
+  background: red !important;
+  width: 30% !important;
+  margin: 0 auto !important;
+}
+.border {
+  border: 4px solid lightskyblue !important;
+  border-radius: 30px !important;
+  /* padding: 50% ; */
+}
+
+/* div.ui.stacked.segment.border::after{
+  border-bottom: 0 none !important;
 } */
