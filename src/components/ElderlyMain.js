@@ -13,6 +13,7 @@ import { connect } from "react-redux";
 import { checkIn } from "../actions";
 import { formatDistance } from "date-fns";
 import { Link } from "react-router-dom";
+import GoogleMap from "./GoogleMap";
 import "../styles/ElderlyMain.css";
 const relationships = [
   { key: "c", text: "Family", value: "family" },
@@ -180,6 +181,9 @@ class ElderlyMain extends Component {
           Last check in:{" "}
           {formatDistance(elderly["one"].lastCheckedIn, new Date())}{" "}
         </p>
+        <div>
+          <GoogleMap />
+        </div>
       </div>
     );
   };
@@ -222,4 +226,7 @@ const mapStateToProps = state => {
   return { elderly: state.elderly };
 };
 
-export default connect(mapStateToProps, { checkIn })(ElderlyMain);
+export default connect(
+  mapStateToProps,
+  { checkIn }
+)(ElderlyMain);
