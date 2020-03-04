@@ -27,7 +27,7 @@ const SignUp = () => (
         <Icon name="angle left" />
       </Button>
     </Link>
-    <div className="header">
+    <div className="headers">
       <h2> Sign Up For Elcare!</h2>
       <h4 id="heckyes" class="ui dividing header">
         An app designed to help you check in on your elderly family members! You

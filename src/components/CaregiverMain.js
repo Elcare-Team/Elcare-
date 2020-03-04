@@ -54,23 +54,11 @@ class CaregiverMain extends Component {
                       ? "Checked In"
                       : "Last Check In: 3:02pm EST "}
                   </div>
-                  <Card.Meta className="steve-info">
-                    <div>
-                      <Icon name="building outline icon" /> Doctors Appt. March
-                      18th
-                    </div>
-                  </Card.Meta>
-                  <Card.Meta className="steve-info">
-                    <div>
-                      <Icon name="sticky note outline icon" />
-                      Son's Birthday Tomorrow
-                    </div>
-                  </Card.Meta>
                 </Card.Meta>
               </Card.Content>
               <Card.Content extra>
                 <div>
-                  <Icon name="user" />2 Caregivers
+                  <Icon name="user" />
                 </div>
               </Card.Content>
             </Card>
