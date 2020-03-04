@@ -59,23 +59,30 @@ class ElderlyMain extends Component {
     return (
       <div>
         <Modal className="modal" open={this.state.open} onClose={this.close}>
-          <Modal.Header className="settings">Settings</Modal.Header>
-          <Modal.Content>{this.renderModalInfo()}</Modal.Content>
+          <Modal.Header className="settings">View Emergency Contact</Modal.Header>
+          <Modal.Content>
+            <div className="Emergency">
+              <h2>
+              Name
+              </h2>
+              <body>
+              Paul
+              </body>
+              <h2>
+              Phone Number
+              </h2>
+              <body>
+              646-544-4312
+              </body>
+              <h2>
+              Email Address
+              </h2>
+              <body>
+              paul@elcare.com
+              </body>
+            </div>
+          </Modal.Content>
           <Modal.Actions>
-            <Button
-              floated="left"
-              color="red"
-              onClick={() => {
-                if (
-                  window.confirm(
-                    "Are you sure you want to delete all your currently saved changes?"
-                  )
-                )
-                  this.close();
-              }}
-            >
-              Cancel
-            </Button>
             <Button primary onClick={this.close}>
               <Icon name="remove" /> Close
             </Button>
@@ -203,14 +210,13 @@ class ElderlyMain extends Component {
           </Button>
         </Link>
         <Button
+          className="heythere"
+          button
           size="huge"
           style={{ float: "right" }}
-          icon
-          labelPosition="right"
           onClick={() => this.openModal()}
         >
-          Settings
-          <Icon name="setting" />
+          View Emergency Contact
         </Button>
         <br />
         <br />
