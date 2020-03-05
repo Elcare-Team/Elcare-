@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
-import "../styles/GoogleMap.css";
-
+import { googleMapsKey } from "../keys";
 // 725 x 450
 
 const position = {
@@ -13,9 +12,10 @@ class GoogleMap extends Component {
   render() {
     return (
       <Map
-        className="map"
         zoom={this.props.zoom}
+        style={{ width: this.props.width, height: this.props.height }}
         google={this.props.google}
+        center={position}
         mapTypeControl={false}
         streetViewControl={false}
         fullscreenControl={false}
@@ -27,5 +27,5 @@ class GoogleMap extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: process.env.GOOGLE_MAPS_KEY
+  apiKey: googleMapsKey
 })(GoogleMap);

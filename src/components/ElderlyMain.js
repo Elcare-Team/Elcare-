@@ -59,27 +59,17 @@ class ElderlyMain extends Component {
     return (
       <div>
         <Modal className="modal" open={this.state.open} onClose={this.close}>
-          <Modal.Header className="settings">View Emergency Contact</Modal.Header>
+          <Modal.Header className="settings">
+            View Emergency Contact
+          </Modal.Header>
           <Modal.Content>
             <div className="Emergency">
-              <h2>
-              Name
-              </h2>
-              <body>
-              Paul
-              </body>
-              <h2>
-              Phone Number
-              </h2>
-              <body>
-              646-544-4312
-              </body>
-              <h2>
-              Email Address
-              </h2>
-              <body>
-              paul@elcare.com
-              </body>
+              <h2>Name</h2>
+              <body>Paul</body>
+              <h2>Phone Number</h2>
+              <body>646-544-4312</body>
+              <h2>Email Address</h2>
+              <body>paul@elcare.com</body>
             </div>
           </Modal.Content>
           <Modal.Actions>
@@ -188,7 +178,7 @@ class ElderlyMain extends Component {
           {formatDistance(elderly["one"].lastCheckedIn, new Date())}{" "}
         </p>
         <div>
-          <GoogleMap />
+          <GoogleMap width="725px" height="450px" zoom={13} />
         </div>
       </div>
     );
