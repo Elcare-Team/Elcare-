@@ -234,13 +234,15 @@ const CaregiverMain = () => {
             <Card.Content>
               <Card.Header className="graph-title">Steve Smith</Card.Header>
               <Card.Meta className="steve-info">
-                <div className="date">"Last Check In: 3:02pm EST</div>
+                <div className="date">Last Check In: 3:02pm EST</div>
+                <div className="date">
+                  Location: Marconey Center, San Francisco
+                </div>
               </Card.Meta>
             </Card.Content>
             <Card.Content extra>
               <div>
                 <Icon name="user" />
-                This is where Steve last checked in!
               </div>
             </Card.Content>
           </Card>
