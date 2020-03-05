@@ -24,9 +24,10 @@
   font-size: 15px;
 }
 .me {
-  width: 1000px !important;
+  width: 1150px !important;
   display: flex;
   margin-top: 15px !important;
+  margin-left: 6px !important;
 }
 .graph-title {
   font-size: 20px !important;
@@ -48,5 +49,6 @@
   height: 500px;
 }
 .yup {
-  margin-top: -100px !important;
+  margin-top: 75px !important;
+  margin-left: 50px !important;
 }
