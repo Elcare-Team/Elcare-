@@ -194,6 +194,7 @@ class ElderlyMain extends Component {
             style={{ float: "left" }}
             icon
             labelPosition="left"
+            className="heythere"
           >
             Log Out
             <Icon name="angle left" />
@@ -209,9 +210,7 @@ class ElderlyMain extends Component {
           View Emergency Contact
         </Button>
         <br />
-        <br />
-        <br />
-        <Container textAlign="center">{this.renderCheckIn()}</Container>
+        <Container className="container" textAlign="center">{this.renderCheckIn()}</Container>
       </div>
     );
   }
