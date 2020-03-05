@@ -17,7 +17,14 @@ const relationships = [
   { key: "o", text: "Other", value: "other" }
 ];
 
-const handleSubmit = () => alert("Submitted");
+const handleSubmit = () => {
+  var ask = window.confirm("Are you sure you want to submit?");
+  if (ask) {
+    window.alert("Accounts created!");
+
+    window.location.href = "/";
+  }
+};
 
 const SignUp = () => (
   <div>
@@ -71,16 +78,18 @@ const SignUp = () => (
         required
         placeholder="oldperson@gmail.com"
       ></input>
-      <label for="pw">Password </label>
+      <label for="pw">Password (Must be 8 characters) </label>
       <input
         control={Input}
         type="password"
+        pattern=".{8,}"
         className="help"
         id="pw"
         label="Password"
         required
         placeholder="*************"
       ></input>
+      <p className="pw">Must be 8 characters</p>
       <h3> Your Loved One's Information</h3>
       <Form.Group widths="equal">
         <Form.Field
@@ -115,11 +124,12 @@ const SignUp = () => (
         required
         placeholder="oldperson@gmail.com"
       ></input>
-      <label for="pw">Password </label>
+      <label for="pw">Password (Must be 8 characters) </label>
       <input
         control={Input}
         type="password"
         className="help"
+        pattern=".{8,}"
         id="pw"
         label="Password"
         required
