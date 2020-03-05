@@ -19,6 +19,7 @@
   top: 1px;
   left: 1px;
   font-size: 1.42rem !important;
+  border-radius: 0px !important;
 }
 .small-message {
   font-size: 15px;
