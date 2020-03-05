@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
-import { googleMapsKey } from "../keys";
 // 725 x 450
 
 const position = {
