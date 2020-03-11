@@ -1,6 +1,5 @@
-// import { Container, Button } from "semantic-ui-react";
 import React from "react";
-import { Button, Form, Grid, Segment } from "semantic-ui-react";
+import { Message, Button, Form, Grid, Segment } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import "../styles/StartPage.css";
 //
@@ -31,9 +30,6 @@ let email = "email";
 let password = "password";
 
 function getpath() {
-  if (email === "admin" && password === " ") {
-    return "/caregiver";
-  }
   if (email === "paul@elcare.com" && password === "caregiver") {
     return "/caregiver";
   }
@@ -80,6 +76,9 @@ const LoginForm = () => (
           </Link>
         </Segment>
       </Form>
+      <Message className="signup-button">
+        New to us? <a href="signup">Sign Up</a>
+      </Message>
     </Grid.Column>
   </Grid>
 );
@@ -92,6 +91,3 @@ const LoginForm = () => (
 // }
 
 export default LoginForm;
-// <Header as='h2' color='teal' textAlign='center'>
-//    Elcare
-// </Header>

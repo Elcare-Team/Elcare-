@@ -1,5 +1,5 @@
 .checkin {
-  margin: 200px;
+  margin: 100px;
 }
 
 .add-contact {
@@ -46,6 +46,6 @@ form.Field {
   border-radius: 0px !important;
 }
 
-.container{
+.container {
   padding-top: 10px !important;
 }

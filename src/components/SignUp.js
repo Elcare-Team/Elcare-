@@ -29,7 +29,13 @@ const handleSubmit = () => {
 const SignUp = () => (
   <div>
     <Link to="/">
-      <Button size="huge" style={{ float: "left" }} icon labelPosition="left">
+      <Button
+        className="whatsup"
+        size="huge"
+        style={{ float: "left" }}
+        icon
+        labelPosition="left"
+      >
         Back
         <Icon name="angle left" />
       </Button>
@@ -37,9 +43,8 @@ const SignUp = () => (
     <div className="headers">
       <h2> Sign Up For Elcare!</h2>
       <h4 id="heckyes" class="ui dividing header">
-        An app designed to help you check in on your elderly family members! You
-        sign up yourself and your loved one. All you have to do is give them
-        their login information.
+        Sign yourself and your loved one up below. Then, give your loved one
+        their login information!
       </h4>
     </div>
     <Form onSubmit={handleSubmit} className="hi">
@@ -143,8 +148,6 @@ const SignUp = () => (
         options={relationships}
         required
         placeholder="Relationship"
-        search
-        searchInput={{ id: "form-select-control-gender" }}
       />
       <Button className="modal-button">Save</Button>
     </Form>
