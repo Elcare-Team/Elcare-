@@ -58,6 +58,7 @@ High-Fidelity Prototyping
 	Type npm install if you do not have it installed to start.
 
 Login Credentials:
+
 	To sign in as elderly:
 	Email: stevesmith@elcare.com
 	Password: elderly
@@ -66,7 +67,8 @@ Login Credentials:
 	Email: paul@elcare.com
 	Password: caregiver
 
-Task 1: You are an elderly person and you want to add an emergency contact.
+Task 1: 
+	You are an elderly person and you want to add an emergency contact.
 
 Component: 
 
@@ -135,6 +137,7 @@ Component:
 ![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/caregiver.png)
 
 Design Summary: 
+
 	In completing the interactive data selection component, we utilized Norman’s design principle of feedback to help users with their interactions with Elcare’s features. Whenever a user hovers over a clickable button, all of the buttons slightly darken, allowing the user to know if a button has the ability to be clicked. This is to improve visual feedback and allow the user to understand what they are able to do with our features. By creating these feedback type features, we make sure our users know that what they have done has resulted in their desired change, preventing the user from repeating a desired action more times than they may desire. We also impart several constraints on the users in that we do not allow an elderly person to see their location on a map until they have checked in. This is to reduce clutter on the screen and make sure that the most important task, checking in, is completed every time our app is used.
 
 	We also keep in mind some of the visual design principles with our new implementations. For one, we utilize the principle of proximity when implementing our map feature for our check in. This is to draw the attention of the elderly user to the map as soon as the check in button is clicked. Because of the proximity of the map to the button, the user is able to surmise that the map is updated in response to the user’s check in, with the location of the user saved and sent to their loved one via the app. Another graphic design principle with utilize is the alignment principle. By placing an image of the elderly person next to their respective interactive graphs of their check ins, the user is able to surmise that the graph shown corresponds to the elderly person to the left of the graph. Without proper alignment, the user may be left unsure about who’s check in data they are analyzing.
@@ -178,7 +181,7 @@ Reflection:
 
 	Our group did a pretty good job of accomplishing a lot in the time we had. Looking back, it was a good idea to choose a project that required minimal backend and could be easily executed. Our main task was to create a way for elderly loved ones to check in with their family members or caregivers, something we did well. Once we implemented this main task, it was easy to implement more supportive tasks, such as adding in a “Sign Up” page and making our data visualization of elderly check-ins interactive. Not only was this helpful for implementing supporting tasks, but it also allowed us to work to specifically on the UI and our user journeys and make them clear and specific, one of our biggest accomplishments. This was something we accomplished by making sure our design was clear and that our buttons and text were easily readable, as well as by sticking to a sleek and simple set of colors for all of our pages. 
 
-Looking forward, our team would try and determine some other main tasks to add to our system. For example we played around with having multiple elderly users linked to a specific caregiver, but ultimately decided against adding the feature as it complicated our user journey and made signing up for the service more confusing. Additionally another feature we would implement would be allowing the caregiver to assign their loved one tasks to check off of a list when they check-in each day. For example a caregiver could put “Go for a walk” on the list as a way to make sure their loved one was getting daily exercise or “Take your medicine” to make sure they took all their pills.
+	Looking forward, our team would try and determine some other main tasks to add to our system. For example we played around with having multiple elderly users linked to a specific caregiver, but ultimately decided against adding the feature as it complicated our user journey and made signing up for the service more confusing. Additionally another feature we would implement would be allowing the caregiver to assign their loved one tasks to check off of a list when they check-in each day. For example a caregiver could put “Go for a walk” on the list as a way to make sure their loved one was getting daily exercise or “Take your medicine” to make sure they took all their pills.
 
 Links:
 
@@ -194,6 +197,7 @@ Links:
 
 
 Login Credentials: 
+
 	To sign in as elderly:
 	Email: stevesmith@elcare.com
 	Password: elderly
