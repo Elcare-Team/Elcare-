@@ -76,6 +76,7 @@ Component:
 	There is a ‘done’ button on the bottom right corner of the modal where the user can safely exit the settings page with all his newly saved settings successfully changed.
 
 Design Summary:
+
 	In completing the data collection form component, we utilized Norman’s User Interface Design Principles. Because of the way that people have mapped filling out forms, we placed the first and last name fields right next to each other, with additional room for a location in a similar fashion to how people write out their addresses. This is the natural mapping concept that Norman described. We also enforced Norman’s principle of constraints by limiting inputs in the phone number field to numbers and ensuring that the input is a valid phone number with 10 digits. This is so that people do not type incorrect values into these fields which would defeat the purpose of the form, especially since emergency contacts are such an important feature of our application. 
 
 	Our prototype also applies the graphic design principles covered in class. We made sure that each of the fields are close to each other when the form is being filled out. This creates a natural association for the user as they are not required to move their eyes too far to see all of the fields that must be filled out. We also put the settings at the top right corner of our screen. This is to uphold external consistency, as setting features on sites and programs tend to be near the top/top right of programs. This consistency is also upheld by using a gear as the icon for our settings as this icon has become synonymous with changing the settings or system preferences as the user wants. 
@@ -84,16 +85,19 @@ Task 2:
 	We chose to implement two tasks, one for each user group of our system. For caregivers the task was to check up on your loved one and for the elderly the task was to log in and do your daily check in as an elderly person.
 
 Component: 
+
 	To implement these two tasks we used the data visualization component as well as the user profile component. We accomplished data visualization using plotly, where we were able to display a line graph showing the frequency in which each loved one checks in. This is to hopefully give a visualization to our user about the habits of the person they are taking care of on a daily basis. It also allows this information to be stored over multiple months, giving the caregiver information about the person they are taking care of over the course of their time using the application. 
 
 	We were also able to implement user profiles with a login screen on the initial home screen. This was to optimize the user’s experience as the application can now remember whether the user is a caregiver or a loved one, changing the experience of the user accordingly. Because one of our goals as a team is to make our app as accessible and easy to use as possible, we hope that with this login feature, we streamline the process of getting onto our application and using the various features we have implemented.
 
 Design Summary: 
+
 	In completing the data visualization, we utilized Norman’s design principle of affordances to demonstrate the fact that additional information can be found by hovering the mouse over the plot each day. Doing so gives pop up information telling the user the exact date, as well as the number of times the loved one has checked up on that day. We also utilized the Norman principle of constraints with our login feature, forcing the user to input a valid email and password combination. This is to ensure that the user has their information safe and secured with our system. We also try to uphold a sense of consistency with our coloring of our buttons, using a bright red for settings as well as logging out. 
 
 	We decided to continue with our minimalist design when adding our new components, due to the positive feedback we received last discussion. We tried to capture the values of usefulness and simplicity through our user experience. This was captured through the lack of distractions on our screen, opting to only include visible features if it adds to the user experience. We made sure to keep the graphic design principles in mind when designing our login screen and our statistics page to make sure that only the necessary information is displayed at a time. The experience for an elderly user is also vastly streamlined as the check in feature is literally one click away from their home screen after logging in. We ensure that their experience is as simple as can be by using the white space on our screen and the alignment of features to draw the user’s eyes into the center of the screen, where the check in button is to make it as simple as possible. We decided to use a san-serif font for our various text options as we are trying to promote on screen readability to our users who are potentially visually impaired. 
 
 Observations: 
+
 	A usability problem we discovered was the distinction between the different buttons on the initial home page. It was expressed that the “caregiver” and “loved one” buttons were hard to see. Another suggestion for the front page was to add a description of what Elcare is on the front page. 
 
 ![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/oldsignin.png)
@@ -109,6 +113,7 @@ Observations:
 	An overall observation was that this application in general can make a personal relationship feel cold and impersonal because we are using technology as a facilitator. In terms of the set-up, people expressed that it might be more helpful if the pages differentiated between a new user and a return user. For a new user, people expected to be prompted rather than manually going through the pages to update information.
 
 Resolutions: 
+
 	Some solutions for the issues pointed out from user testing may include changing the home page to a sign-in page that automatically directs returning users to their respective accounts (caregivers sign in to caregiver accounts, elderly sign into elderly accounts). We would also include a new user button to allow new users to set up new accounts. In addition to the log-in feature, it might be helpful to either include in information blurb either as a separate “info” button or just at the bottom of the login page to inform users of the purpose of this application. 
 
 	For the settings window, to remove some of the confusion, we could rename “settings” to “profile” with an option that links to a list of emergency contacts, which we can then edit as needed. Although this may become confusing, we could also consider adding pop-up bubbles that tell users where certain features are and what they do so that those who are less tech-savvy or don’t remember how the application works are able to navigate more easily. During the emergency contact editing process, we can remove the cancel button and simply notify the user that they have unsaved changes and ask if they still want to close. Additionally, since this application would ideally target users from everywhere, it would be helpful to allow for area code autocompletion when entering the phone number so that we can display proper number formatting. Visually, we can enlarge the buttons and fix the “relationship” dropdown menu to match the heights of the other boxes. We could also add different colors for each option, creating an association from each color to different tasks.
@@ -116,9 +121,11 @@ Resolutions:
 	Lastly, since this technology is aimed to make it easier for a caregiver and the elderly communicate, to minimize the impersonal effects, we could consider having the option for users to personalize their accounts. However, this solution may not be that desirable since we want to keep the application as simple and easy to use as possible.
 
 Task 3: 
+
 	Comparing an elderly’s check ins over time. This is achieved by making our graphs interactive and easy for a user to manipulate.
 
 Component:
+
 	The component we completed for this task is the interactive data selection part. We achieved this by adding on features to our data visualization fields. If you are logged in as a caregiver, you are now able to interact with the graphs of your loved ones, being able to hover over graphs to see exact check in data, as well as see their check in trends. Users are able to see an elderly person’s check in information for their selected months, allowing the user to visualize changes over time to their loved one’s check in behavior. Because we added on to our data visualization field, we also added an additional data visualization feature to the check in button, logging the location of the elderly member who checks in on a map. This is to increase transparency between the elderly member’s whereabouts, and give the caregiver an accurate tracking of their elderly family member’s commute.
 
 ![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/checkedin.png)
@@ -131,6 +138,7 @@ Design Summary:
 	We also keep in mind some of the visual design principles with our new implementations. For one, we utilize the principle of proximity when implementing our map feature for our check in. This is to draw the attention of the elderly user to the map as soon as the check in button is clicked. Because of the proximity of the map to the button, the user is able to surmise that the map is updated in response to the user’s check in, with the location of the user saved and sent to their loved one via the app. Another graphic design principle with utilize is the alignment principle. By placing an image of the elderly person next to their respective interactive graphs of their check ins, the user is able to surmise that the graph shown corresponds to the elderly person to the left of the graph. Without proper alignment, the user may be left unsure about who’s check in data they are analyzing.
 
 Observations: 
+
 	A usability problem we discovered was that there was no clear method or path of setup for users. On our login page, users mentioned that there was no indication of how users can create new accounts or how this process leads to the actual usage of the application. Additionally, users expressed concern over how elderly accounts are linked to caregiver accounts. The main question being whether an email would be sent to caregivers informing them of a new patient request.
 
 ![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/oldsignin.png)
@@ -147,6 +155,7 @@ Observations:
 	For the majority of users, the simplistic design was pleasing to the eye and understandably easy to use for its targeted audience. The most important concerns were mainly to understand how the application works rather than just viewing some of the features.
 
 Resolution: 
+
 	Some solutions for the issues pointed out from user testing may include a “create an account” button on the login page which would direct new users to the setup process. Ideally, this process would include indicating who the user is, elderly or caregiver. After indicating the type of user, users are then directed to another page that corresponds to their previous answer, where they continue to fill out essential information. For elderly, important information may include name, external contact information, birth date, the name of their caregiver, and their caregiver’s contact information. For the caregiver, similar information is given, but the caregiver’s information is of course substituted for the elderly’s information. Caregivers and elderly are both notified if there are outstanding requests for connecting caregiver and elderly. However, if it is established that there is already a request pending, then either party can choose to accept the request once an account has been created.
 
 ![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/login.png)
@@ -164,29 +173,30 @@ Resolution:
 	Finally, to enhance the usability of a caregiver account, it might be useful to add a check-in feature for the caregiver as well. This feature would notify the elderly that a caregiver is just checking in to make sure they are ok and requests that they check-in in response. Another feature to add may be a location tracker that logs if the elderly has left a specific location (a location that is saved as “home”). This feature would help to ensure the safety of the elderly. One of the last two features we might include would be an emergency contacts button that, when clicked, displays the emergency contacts for that elderly. The other feature would allow caregivers to keep track of daily activities as recorded by the elderly. These activities could be making sure that an elderly is taking their medicine or that they are eating properly. There could also be a graph component for this feature as well.
 
 Reflection: 
+
 	Our group did a pretty good job of accomplishing a lot in the time we had. Looking back, it was a good idea to choose a project that required minimal backend and could be easily executed. Our main task was to create a way for elderly loved ones to check in with their family members or caregivers, something we did well. Once we implemented this main task, it was easy to implement more supportive tasks, such as adding in a “Sign Up” page and making our data visualization of elderly check-ins interactive. Not only was this helpful for implementing supporting tasks, but it also allowed us to work to specifically on the UI and our user journeys and make them clear and specific, one of our biggest accomplishments. This was something we accomplished by making sure our design was clear and that our buttons and text were easily readable, as well as by sticking to a sleek and simple set of colors for all of our pages. 
 
 Looking forward, our team would try and determine some other main tasks to add to our system. For example we played around with having multiple elderly users linked to a specific caregiver, but ultimately decided against adding the feature as it complicated our user journey and made signing up for the service more confusing. Additionally another feature we would implement would be allowing the caregiver to assign their loved one tasks to check off of a list when they check-in each day. For example a caregiver could put “Go for a walk” on the list as a way to make sure their loved one was getting daily exercise or “Take your medicine” to make sure they took all their pills.
 
 Links:
 
-A link to your team’s repository 
-https://github.com/Elcare-Team/Elcare-
+	A link to your team’s repository 
+	https://github.com/Elcare-Team/Elcare-
 
-A link to a working version of your prototype (or a video of it): 
-The final project_8 branch of our githu
-b houses the working version of our app: https://github.com/Elcare-Team/Elcare-/tree/project_8
+	A link to a working version of your prototype (or a video of it): 
+	The final project_8 branch of our githu
+	b houses the working version of our app: https://github.com/Elcare-Team/Elcare-/tree/project_8
 
-Instructions for running your app (including how your prototype is best viewed): 
-To view the app, first clone the repository to your home computer. Then in the command line, to run the React app, do npm run start. You might need to update your npm packages, but other than that it should work! 
+	Instructions for running your app (including how your prototype is best viewed): 
+	To view the app, first clone the repository to your home computer. Then in the command line, to run the React app, do npm run start. You might need to update your npm packages, but other than that it should work! 
 
 
 Login Credentials: 
-To sign in as elderly:
-Email: stevesmith@elcare.com
-Password: elderly
+	To sign in as elderly:
+	Email: stevesmith@elcare.com
+	Password: elderly
 
-To sign in as caregiver:
-Email: paul@elcare.com
-Password: caregiver
+	To sign in as caregiver:
+	Email: paul@elcare.com
+	Password: caregiver
 
