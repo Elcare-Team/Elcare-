@@ -84,9 +84,7 @@ Design Summary:
 
 	Our prototype also applies the graphic design principles covered in class. We made sure that each of the fields are close to each other when the form is being filled out. This creates a natural association for the user as they are not required to move their eyes too far to see all of the fields that must be filled out. We also put the settings at the top right corner of our screen. This is to uphold external consistency, as setting features on sites and programs tend to be near the top/top right of programs. This consistency is also upheld by using a gear as the icon for our settings as this icon has become synonymous with changing the settings or system preferences as the user wants. 
 
-Task 2:
-
-	We chose to implement two tasks, one for each user group of our system. For caregivers the task was to check up on your loved one and for the elderly the task was to log in and do your daily check in as an elderly person.
+Task 2:We chose to implement two tasks, one for each user group of our system. For caregivers the task was to check up on your loved one and for the elderly the task was to log in and do your daily check in as an elderly person.
 
 Component: 
 
@@ -124,9 +122,7 @@ Resolutions:
 
 	Lastly, since this technology is aimed to make it easier for a caregiver and the elderly communicate, to minimize the impersonal effects, we could consider having the option for users to personalize their accounts. However, this solution may not be that desirable since we want to keep the application as simple and easy to use as possible.
 
-Task 3: 
-
-	Comparing an elderly’s check ins over time. This is achieved by making our graphs interactive and easy for a user to manipulate.
+Task 3: Comparing an elderly’s check ins over time. This is achieved by making our graphs interactive and easy for a user to manipulate.
 
 Component:
 
