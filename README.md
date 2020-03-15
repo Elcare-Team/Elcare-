@@ -3,10 +3,12 @@ Elcare
 Problem and Related Work
 
 Problem and Motivation:
+
 	One of the problems that our group noted was the fact that there is a growing number of people who are forced to be taken care of by their families due to economic pressures. According to the 2017 census, the median age in the United States has risen to an all-time high of 38, as the majority of counties in the country have reported getting older (U.S. Census Bureau). Coupled with this fact is the fact that the number of older people is projected to surpass the number of young people by 2035. As more of the population is getting older, families are finding it more economically beneficial to live in multigenerational units. In 2016, 20% of the US population reported living with multiple generations in the same household, which is the highest reported proportion since 1950 (Cohn). 
 With the baby boomer generation retiring with a lack of pension plans and weakening social security services, people in our generation may find that taking care of their own family may become the only solution. When this becomes the case and people are trying to juggle their career and social lives, while also taking care of parents or even grandparents, we hope that our quick message-response check-in system can help ease some of these stresses.
 
 Analysis:
+
 	Prior to prototyping this problem had not yet been solved by current technologies because current demand has not yet made such technology a necessity. But as discussed in both Haass’ and Friedberg’s articles regarding baby boomer retirement, this is becoming an increasing concern, because many baby boomers have not saved enough or have underestimated the cost of healthcare and other expenses (Haass; Friedberg). There is some progress in the field, with one such example being GrandCare Systems. However, systems like this do not take into account some of the biggest obstacles facing this field. This includes things like cost, portability, the barrier of entry to immigrant groups, ease of use, and universality.
 We acknowledge that there are some aspects of this problem that are not solvable with technology. Our technology cannot be used in place of urgent care or more specific forms of medical check-ups. It is unable to provide help, say, if an elderly person has fallen and requires assistance to get up. But if immediate help is needed, our tech could be used to notify a local healthcare service provider of their location with additional information about the problem. However, we would like to focus our attention to address those problems that can be reduced or mitigated using technology. With features like instant messaging and video call, an emergency help dialer, a check-up calendar, medication scheduler, and various wellness checks, we hope that this technology can make ensuring the health and well-being of loved ones easier than ever and potentially even save lives.
 
@@ -33,7 +35,7 @@ In addition, we also created persona profiles for some of the users of our app. 
 Paper Prototyping:
 
 An example of our paper prototype can be seen below:
-
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/paper.png)
 
 You can also use the following link to navigate through the paper prototype: https://marvelapp.com/85iha13.
 After presenting the prototype to the users, we found that they enjoyed the simplistic design of the application. It was easy to use and navigate. Every user was able to pass the tasks we assigned to them. However, some of the users provided us with similar feedback regarding improvement to our application. Their feedback can be found in the list below:
