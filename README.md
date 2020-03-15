@@ -29,7 +29,12 @@ We conducted our interviews over the phone with friends and family members. Duri
 7. What types of platforms do elderly family members use or are familiar with?
 
 From the interviews, we found that users seem to need a far more simple application than currently exists. It was a theme that many elderly users expressed difficulty when trying to learn new technologies, and require constant reminders or assistance to get them to work. It was surprising to hear that . Some pain points for our design would be that elderly users feel no desire to learn new technology, which would render any application or program useless if people feel like there is too large of a learning curve. One of the obstacles that prevent our users from changing their behavior is the fact that some are content with their current means of communication. They feel like phone calls or emails are more than enough to communicate with their loved ones. One opportunity for innovation would be that every service our app provides should be accessible from the home screen in 1-2 clicks. The more clicks or instructions for an elderly user would only cause more confusion, so the simpler the better. We would also want our app to combine the three methods of communication (voice call, video call, instant message) into one simple UI which is easy for the elderly to interact with.
+
 In addition, we also created persona profiles for some of the users of our app. Here are some examples:
+
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/person1.png)
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/person2.png)
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/picture3.png)
 
 
 Paper Prototyping:
@@ -84,10 +89,15 @@ We decided to continue with our minimalist design when adding our new components
 
 Observations: A usability problem we discovered was the distinction between the different buttons on the initial home page. It was expressed that the “caregiver” and “loved one” buttons were hard to see. Another suggestion for the front page was to add a description of what Elcare is on the front page. 
 
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/oldsignin.png)
+
 Another usability problem we discovered from testing was the possible confusion on the emergency contacts window, with both the cancel and the close button. Some people preferred to see the example phone number formatted as (+1 123-456-7890) instead of (1234567890). It was also noted that settings is either not the proper label or the proper place for adding emergency contacts when on the elderly page. Another person preferred that the text and buttons be enlarged for more visibility. In terms of visual appeal, people felt that it was odd that the height of the “relationship” dropdown menu was a different height than the other boxes.
+
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/emergency.png)
 
 Some people expressed that the placement of buttons in the upper left and right corners to be odd.
 
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/checkin.png)
 
 An overall observation was that this application in general can make a personal relationship feel cold and impersonal because we are using technology as a facilitator. In terms of the set-up, people expressed that it might be more helpful if the pages differentiated between a new user and a return user. For a new user, people expected to be prompted rather than manually going through the pages to update information.
 
@@ -101,6 +111,9 @@ Task 3: Comparing an elderly’s check ins over time. This is achieved by making
 
 Component:The component we completed for this task is the interactive data selection part. We achieved this by adding on features to our data visualization fields. If you are logged in as a caregiver, you are now able to interact with the graphs of your loved ones, being able to hover over graphs to see exact check in data, as well as see their check in trends. Users are able to see an elderly person’s check in information for their selected months, allowing the user to visualize changes over time to their loved one’s check in behavior. Because we added on to our data visualization field, we also added an additional data visualization feature to the check in button, logging the location of the elderly member who checks in on a map. This is to increase transparency between the elderly member’s whereabouts, and give the caregiver an accurate tracking of their elderly family member’s commute.
 
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/checkedin.png)
+
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/caregiver.png)
 
 Design Summary: In completing the interactive data selection component, we utilized Norman’s design principle of feedback to help users with their interactions with Elcare’s features. Whenever a user hovers over a clickable button, all of the buttons slightly darken, allowing the user to know if a button has the ability to be clicked. This is to improve visual feedback and allow the user to understand what they are able to do with our features. By creating these feedback type features, we make sure our users know that what they have done has resulted in their desired change, preventing the user from repeating a desired action more times than they may desire. We also impart several constraints on the users in that we do not allow an elderly person to see their location on a map until they have checked in. This is to reduce clutter on the screen and make sure that the most important task, checking in, is completed every time our app is used.
 
@@ -108,15 +121,26 @@ We also keep in mind some of the visual design principles with our new implement
 
 Observations: A usability problem we discovered was that there was no clear method or path of setup for users. On our login page, users mentioned that there was no indication of how users can create new accounts or how this process leads to the actual usage of the application. Additionally, users expressed concern over how elderly accounts are linked to caregiver accounts. The main question being whether an email would be sent to caregivers informing them of a new patient request.
 
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/oldsignin.png)
+
 
 Although users had previously commented on the appropriateness of labeling the “Add Emergency Contact” feature as a setting, users further noted that it might be more appropriate for emergency contacts to be added through the caregiver.
 
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/emergency.png)
+
 Even though users felt that the check-in tracking graph was a nice feature, there were some excessive features such as the zoom-in option on the graph. Additionally, if the graph feature is meant to display the number of check-ins in a month, users questioned whether another part of the graph would allow users to view previous months’ check-in histories as well. Another problem we found during user testing was that there were options to click on or options to perform on the caregiver page. As caregivers may also be responsible for checking in, managing their patients wellbeing, or contacting emergency contacts, users noticed that there were no such options.
+
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/original1.png)
 
 For the majority of users, the simplistic design was pleasing to the eye and understandably easy to use for its targeted audience. The most important concerns were mainly to understand how the application works rather than just viewing some of the features.
 
 Resolution: Some solutions for the issues pointed out from user testing may include a “create an account” button on the login page which would direct new users to the setup process. Ideally, this process would include indicating who the user is, elderly or caregiver. After indicating the type of user, users are then directed to another page that corresponds to their previous answer, where they continue to fill out essential information. For elderly, important information may include name, external contact information, birth date, the name of their caregiver, and their caregiver’s contact information. For the caregiver, similar information is given, but the caregiver’s information is of course substituted for the elderly’s information. Caregivers and elderly are both notified if there are outstanding requests for connecting caregiver and elderly. However, if it is established that there is already a request pending, then either party can choose to accept the request once an account has been created.
 
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/login.png)
+
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/signup.png)
+
+![Paper Prototype](https://github.com/Elcare-Team/Elcare-/blob/improvements/images/signup2.png)
 
 In terms of emergency contact information, depending on patient’s experience with technology, it may be a more viable option to allow both caregiver and elderly to add, change, or remove emergency contacts as deemed necessary. However, this approach may be conditional on the mental health and state of the  elderly, in which case it would be more suitable for the caregiver to manage emergency contacts but both caregiver and elderly have access to the contact information.
 
