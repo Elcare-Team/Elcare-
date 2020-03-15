@@ -69,6 +69,7 @@ Login Credentials:
 Task 1: You are an elderly person and you want to add an emergency contact.
 
 Component: 
+
 	The component we implemented is the data collection form. This is done with our large button titled ‘Settings’ in the top right corner of the screen. Once the user clicks on it, a modal is opened for them where there is an input titled ‘Add Emergency Contact’ where they can type in the new emergency contact’s name, relationship to them, email and phone number and then hit a green button ‘save’ to save their changes. Once the save button is clicked, a green message is shown to the user to verify with the user that they have added an emergency contact successfully. Both the phone number and email fields include validation to make sure the inputted value is a valid lengthed phone number.
 
 	If the user wants to revert the recent changes he just made, he can click the ‘cancel’ button on the bottom left corner of the modal. An alert will be shown to the user when the button is clicked to double check with the user that he wants to cancel all his newly saved changes.
@@ -82,6 +83,7 @@ Design Summary:
 	Our prototype also applies the graphic design principles covered in class. We made sure that each of the fields are close to each other when the form is being filled out. This creates a natural association for the user as they are not required to move their eyes too far to see all of the fields that must be filled out. We also put the settings at the top right corner of our screen. This is to uphold external consistency, as setting features on sites and programs tend to be near the top/top right of programs. This consistency is also upheld by using a gear as the icon for our settings as this icon has become synonymous with changing the settings or system preferences as the user wants. 
 
 Task 2:
+
 	We chose to implement two tasks, one for each user group of our system. For caregivers the task was to check up on your loved one and for the elderly the task was to log in and do your daily check in as an elderly person.
 
 Component: 
