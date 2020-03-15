@@ -188,11 +188,10 @@ Looking forward, our team would try and determine some other main tasks to add t
 
 ## Links
 
-*A link to your team’s repository*
-https://github.com/Elcare-Team/Elcare-
+*A link to your team’s repository*: https://github.com/Elcare-Team/Elcare-
 
-*A link to a working version of your prototype (or a video of it)*
-The final project_8 branch of our github houses the working version of our app: https://github.com/Elcare-Team/Elcare-/tree/project_8
+*A link to a working version of your prototype (or a video of it)*: https://github.com/Elcare-Team/Elcare-/tree/project_8
 
-*Instructions for running your app (including how your prototype is best viewed)*
+*Instructions for running your app (including how your prototype is best viewed)*:
+
 To view the app, first clone the repository to your home computer. To install packages, run `npm install`. Then in the command line, to run the React app, do `npm run start`. You might need to update your npm packages, but other than that it should work!
