@@ -5,7 +5,7 @@ Problem and Related Work
 Problem and Motivation:
 
 	One of the problems that our group noted was the fact that there is a growing number of people who are forced to be taken care of by their families due to economic pressures. According to the 2017 census, the median age in the United States has risen to an all-time high of 38, as the majority of counties in the country have reported getting older (U.S. Census Bureau). Coupled with this fact is the fact that the number of older people is projected to surpass the number of young people by 2035. As more of the population is getting older, families are finding it more economically beneficial to live in multigenerational units. In 2016, 20% of the US population reported living with multiple generations in the same household, which is the highest reported proportion since 1950 (Cohn). 
-With the baby boomer generation retiring with a lack of pension plans and weakening social security services, people in our generation may find that taking care of their own family may become the only solution. When this becomes the case and people are trying to juggle their career and social lives, while also taking care of parents or even grandparents, we hope that our quick message-response check-in system can help ease some of these stresses.
+	With the baby boomer generation retiring with a lack of pension plans and weakening social security services, people in our generation may find that taking care of their own family may become the only solution. When this becomes the case and people are trying to juggle their career and social lives, while also taking care of parents or even grandparents, we hope that our quick message-response check-in system can help ease some of these stresses.
 
 Analysis:
 
