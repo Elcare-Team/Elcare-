@@ -177,8 +177,8 @@ class ElderlyMain extends Component {
           Last check in:{" "}
           {formatDistance(elderly["one"].lastCheckedIn, new Date())}{" "}
         </p>
-        <div>
-          <GoogleMap width="725px" height="450px" zoom={13} />
+        <div className="map">
+          <GoogleMap width="50%" height="450px" zoom={13} />
         </div>
       </div>
     );

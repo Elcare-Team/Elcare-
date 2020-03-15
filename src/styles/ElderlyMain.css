@@ -1,5 +1,6 @@
 .checkin {
   margin: 100px;
+  /* text-align: center; */
 }
 
 .add-contact {
@@ -30,6 +31,7 @@ form.Field {
 form.Field {
   margin-top: 15px !important;
   margin-bottom: 15px !important;
+  /* background-color: black; */
 }
 
 .Emergency > body {
@@ -48,4 +50,9 @@ form.Field {
 
 .container {
   padding-top: 10px !important;
+}
+
+.map{
+  /* text-align: center; */
+  padding-left: 14.5% !important;
 }
